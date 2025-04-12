@@ -1,0 +1,104 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', Sans-serif;
+    --rosapalo: #E3AAAA;
+    --secundario: #f6c8c7;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0
+}
+
+a{
+    text-decoration: none;
+    font-family: var(--fuenteParrafos);
+    font-size:25px;
+}
+
+h1, h2, h3, h4{
+    font-family: var(--fuenteHeading);
+}
+h1{font-size: 4.8rem;}
+h2{font-size: 4rem;}
+h3{font-size: 3.2rem;}
+h4{font-size: 2.8rem;}
+
+img{
+    max-width: 100%;
+}
+/** Header **/
+.header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../img/headerpic.png);
+    width: 100%;
+    height: 450px;
+    border: 0.5px solid black;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+}
+.barra__navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imagen__logo{
+    width: 150px;
+    height: 150px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.enlace__1 a {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: var(--rosapalo);
+    color: yellow;
+    font-weight: bold;
+    
+}
+.enlace__1{
+    margin-right: 5rem;
+}
+.enlace__1--link:hover{
+    background-color: palevioletred;
+    color: white;
+
+}
+@media(max-width: 768px){
+    
+    .barra__navegacion{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .header__container1 {
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+    }
+    .enlace__1{
+        width: 55%;
+        margin: 0 auto;
+    }
+    .enlace__1--link{
+        display: block;
+        margin-top: 10px;
+        }
+    h1{font-size: 2.9rem;}
+    h2{font-size: 2.9rem;}
+    a{font-size: 1.9rem}
+
+}
