@@ -146,6 +146,8 @@ img{
 @media(max-width:768px){
     .descripcion__principal{
         width:100%;
+        margin:0;
+        padding:0;
     }
     .info__subtitle{
         grid-row: 1/2;
