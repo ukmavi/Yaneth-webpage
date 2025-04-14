@@ -4,6 +4,12 @@
     --rosapalo: #E3AAAA;
     --secundario: #f6c8c7;
     --crema: #F5F5DC;
+    --color-fondo: #F8F9FA;
+    --rosa-quemado: #B97A95;
+    --dorado-suave: #C9B037;
+    --rosa-beige: #F8D7DD;
+    --rosa-té: #E3B7B7;
+    --rosa-polvo: #EAC5C9;
 
 }
 
@@ -20,7 +26,7 @@ body{
     font-size: 1.6rem;
     line-height: 2;
     margin: 0;
-    background-color: var(--crema);
+    background-color: var(--color-fondo);
 }
 
 a{
@@ -175,4 +181,51 @@ img{
 }
 .contacto__info:hover{
     background-color: palevioletred;
+}
+.todo__servicios{
+    text-align: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+}
+.titulo__servicios{
+    border: 10px solid var(--dorado-suave);
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: var(--rosa-polvo);
+    line-height: normal;
+    color: var(--dorado-suave-);
+    font-weight: bold;
+
+}
+.articles__servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--rosa-té);
+    margin-top: 50px;
+    border: 5px solid var(--rosa-quemado);
+}
+.articles__servicios h3{
+    color: white;
+}
+@media(max-width: 768px){
+    .articles__servicios{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .titulo__servicios{
+        width: 95%;
+    }
+}
+.svg__servicios{
+    border: 3px solid white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 100%;
+    background-color: var(--dorado-suave);
+    width: 50%;
+    margin: 0 auto;
 }
