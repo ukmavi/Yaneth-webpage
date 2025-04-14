@@ -189,16 +189,20 @@ img{
     display: grid;
 }
 .titulo__servicios{
-    border: 10px solid var(--dorado-suave);
+    border: 10px solid var(--rosa-quemado);
     width: 50%;
     margin: 0 auto;
     margin-top: 50px;
     border-radius: 10%;
     padding: 10px;
-    background-color: var(--rosa-polvo);
+    background-color: var(--rosapalo);
     line-height: normal;
-    color: var(--dorado-suave-);
+    color: white;
     font-weight: bold;
+
+}
+.titulo__servicios p{
+    font-size: 2rem ;
 
 }
 .articles__servicios{
@@ -211,13 +215,21 @@ img{
 .articles__servicios h3{
     color: white;
 }
+.article__secction{
+    border: 5px solid var(--rosa-quemado);
+    padding-bottom: 30px;
+}
 @media(max-width: 768px){
     .articles__servicios{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     .titulo__servicios{
         width: 95%;
+    }
+    .article__secction{
+        border: 5px solid var(--rosa-quemado);
+        padding-bottom: 30px;
     }
 }
 .svg__servicios{
@@ -226,6 +238,6 @@ img{
     margin: 5px;
     border-radius: 100%;
     background-color: var(--dorado-suave);
-    width: 50%;
+    width: 35%;
     margin: 0 auto;
 }
