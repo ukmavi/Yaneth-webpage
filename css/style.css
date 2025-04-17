@@ -254,13 +254,17 @@ img{
 .footer__container{
 }
 .footer--container{
-    background-color: var(--color-fondo);
-    color: black;
+    background-color: var(--rosa-quemado);
+    color: white;
 }
 .enlace__1--footer a{
     font-size: 3rem;
-    color: black;
+    color: white;
     text-align: center;
+    margin-bottom: 10px;
+}
+.enlace__1--footer{
+    margin-bottom: 20px;
 }
 .footer__paragraph{
     text-align: center;
@@ -269,5 +273,6 @@ img{
     .footer--container{
         justify-content:space-around;
         margin-top: 10rem;
+        background-color: var(--secundario);
     }
 }
